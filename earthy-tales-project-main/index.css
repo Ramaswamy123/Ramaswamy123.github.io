@@ -2,7 +2,7 @@
 
 .app-container {
     width: 390px;
-    height: 5474px;
+    height: 5920px;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -14,7 +14,7 @@
     align-items: center;
     width: 390px;
     height: 121px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     background: #737D64;
     position:fixed;
     z-index:1;
@@ -204,14 +204,20 @@
     box-shadow: 4px 2px 3px 0px #D3D3D3;
 }
 
-.product-image {
+/* .product-image {
     width: 148px;
     height: 122.586px;
     flex-shrink: 0;
     border-radius: 9px 9px 0px 0px;
     background: url("pictures/product-image.png"), lightgray 50% / cover no-repeat;
+} */
+.products-image {
+    width: 148px;
+height: 122.586px;
+    flex-shrink: 0;
+    border-radius: 8.026px 8.026px 0px 0px;
+    margin-top:-19px;
 }
-
 .product-name {
     display: flex;
     width: 110.192px;
@@ -335,7 +341,7 @@ flex-shrink: 0;
 }
 .experience-diff-container{
     width: 390px;
-    height: 746px;
+    height: 1220px;
     flex-shrink: 0;
     margin-top:25px;
     background-color: #737D64;
@@ -457,6 +463,107 @@ flex-shrink: 0;
     width:390px;
     justify-content:center;
     margin-top:-20px;
+}
+
+.experience-the-distinction-container-desk{
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+}
+.experience-line{
+    width: 390px;
+    height: 1px;
+    background-color:#FFF;
+}
+.experience-the-distinction-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-the-distinction-heading{
+    color: #FFF;
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 103.4%; */
+    text-transform: uppercase;
+    /* margin-bottom:-75px; */
+    /* margin-top:20px; */
+}
+.experience-atta-container{
+    display:flex;
+    /* margin-top:71px; */
+    align-items: center;
+    /* justify-content: center; */
+    /* gap:-20px; */
+}
+.ex-stoned-milled-atta-container{
+    /* width:40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:30px;
+    width:45%;
+    margin-left:0px;
+    margin-top:25px;
+    /* margin-right:-10px; */
+}
+.ex-refained-atta-container{
+    /* width:40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:45%;
+    margin-left:-90px;
+    margin-top:30px;
+
+}
+.verical-line{
+    width: 228px;
+    height: 0px;
+    border:2px solid white;
+    transform: rotate(90deg);
+    margin-left:-110px;
+    margin-top:50px;
+    /* background-color: white; */
+}
+.stoned-milled-atta-heading{
+    /* text-align:left; */
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.refined-atta-heading{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.left-points{
+    /* margin-top:71px; */
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    text-align:left;
+    margin-top:20px;
+}
+
+.right-points{
+    /* margin-top:71px; */
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    text-align:left;
+    margin-top:20px;
 }
 
 .upto15-percent-image{
@@ -734,6 +841,7 @@ background: #D9D9D9;
 .FAQs-container{
     display: flex;
     flex-direction: column;
+    /* margin-bottom:50px; */
 }
 
 .FAQs-heading-container{
@@ -837,15 +945,14 @@ width: 287px;
     justify-content:center;
     gap:30px;
     width: 366px;
-height: 54px;
-flex-shrink: 0;
-border-radius: 20px 20px 0px 0px;
-background: #737D64;
-padding-top:9px;
-margin-top:25px;
-position: fixed;
-   /* left: 0; */
-   bottom: 0;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    background: #737D64;
+    padding-top:9px;
+    margin-top:65px;
+    /* position: fixed;
+    bottom: 0; */
  
 }
 .home-icon{
@@ -1627,6 +1734,7 @@ text-transform: capitalize;
 
     .experience-the-distinction-container-desk{
         display: flex;
+        width:1728px;
         flex-direction: column;
         align-items: center;
         margin-top:20px;
