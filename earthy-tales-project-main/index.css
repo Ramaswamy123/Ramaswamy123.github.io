@@ -2481,9 +2481,8 @@ text-transform: capitalize;
     }
 }
 
-@media screen and (min-width:1300px) and (max-width:1440px){
+@media screen and (min-width:526px) and (max-width:1440px){
     .app-container {
-        
         width:1365px;
          height: 8900px;
         /* display:flex;
