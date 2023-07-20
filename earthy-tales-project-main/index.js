@@ -34,7 +34,7 @@ function selectImage(imageIndex) {
   var currentImageIndex = 1;
   
   function updateSlider() {
-    var translateXValue = -currentImageIndex * (sliderImages[0].offsetWidth + 20);
+    var translateXValue = -currentImageIndex * (sliderImages[1].offsetWidth + 20);
     slider.style.transform = 'translateX(' + translateXValue + 'px)';
   
     // Remove the "visible" class from all images
@@ -46,6 +46,19 @@ function selectImage(imageIndex) {
     sliderImages[currentImageIndex].classList.add('visible');
   }
   
+  function updateSlider1() {
+    var translateXValue = -currentImageIndex * (sliderImages[2].offsetWidth + 20);
+    slider.style.transform = 'translateX(' + translateXValue + 'px)';
+
+    // Remove the "visible" class from all images
+    sliderImages.forEach(function(image) {
+        image.classList.remove('visible');
+    });
+
+    // Add the "visible" class to the selected image
+    sliderImages[currentImageIndex].classList.add('visible');
+}
+
   function slideLeft() {
     if (currentImageIndex > 0) {
       currentImageIndex--;
@@ -57,7 +70,7 @@ function selectImage(imageIndex) {
     if (currentImageIndex < sliderImages.length - 1) {
       currentImageIndex++;
     }
-    updateSlider();
+    updateSlider1();
   }
   
   updateSlider();

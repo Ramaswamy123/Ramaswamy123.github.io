@@ -97,7 +97,10 @@
     height: 25px;
     flex-shrink: 0;
 }
-
+.farmer-icon{
+    width: 20px;
+    height: 25px;
+}
 .farmer-section {
     display: flex;
     align-items: center;
@@ -1101,6 +1104,9 @@ text-transform: capitalize;
 .dot-section-desk{
     display:none;
 }
+.shake-hand-icon{
+    display:none;
+}
 @media screen and (min-width:1440px){
     .app-container {
         width:1728px;
@@ -1321,7 +1327,11 @@ text-transform: capitalize;
         width: 75px;
         height: 75px;
     }
+    .farmer-icon{
+        display: none;
+    }
     .shake-hand-icon{
+        display: flex;
         width: 98.363px;
         height: 58.15px;
     }
@@ -2695,7 +2705,11 @@ text-transform: capitalize;
         width: 75px;
         height: 75px;
     }
+    .farmer-icon{
+        display: none;
+    }
     .shake-hand-icon{
+        display: flex;
         width: 98.363px;
         height: 58.15px;
     }
